@@ -28,6 +28,7 @@
   [(session/get :current-page)])
 
 (defn init! []
+  (hook-browser-navigation!)
   (secretary/set-config! :prefix "#")
   (session/put! :current-page guest-list-page)
   (reagent/render-component
