@@ -1,16 +1,21 @@
-reagent-example
-===============
+# reagent-example
 
-## Usage
+generated using Luminus version 2.9.x
 
-First, you need to start the ClojureScript compiler by running
+FIXME
 
-```
-lein cljsbuild auto dev
-```
+## Prerequisites
 
-Then you can start the server using
+You will need [Leiningen][1] 2.0 or above installed.
 
-```
-lein ring server
-```
+[1]: https://github.com/technomancy/leiningen
+
+## Running
+
+To start a web server for the application, run:
+
+    lein run
+
+## License
+
+Copyright © 2016 FIXME

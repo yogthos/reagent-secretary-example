@@ -1,5 +1,5 @@
 (ns guestbook.pages.guest-list
-  (:require [guestbook.session :as session]
+  (:require [reagent.session :as session]
             [clojure.string :as s]
             [reagent.core :as reagent :refer [atom]]
             [secretary.core :refer [dispatch!]]))

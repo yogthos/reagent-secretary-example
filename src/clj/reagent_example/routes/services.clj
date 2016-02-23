@@ -1,7 +1,6 @@
 (ns reagent-example.routes.services
   (:use compojure.core)
   (:require [reagent-example.layout :as layout]
-            [noir.response :refer [edn]]
             [clojure.pprint :refer [pprint]]))
 
 (defn save-document [doc]
@@ -10,4 +9,4 @@
 
 (defroutes service-routes
   (POST "/save" {:keys [body-params]}
-        (edn (save-document body-params))))
+        (save-document body-params)))

@@ -1,6 +1,6 @@
 (ns guestbook.pages.guest
   (:refer-clojure :exclude [get])
-  (:require [guestbook.session :as session]
+  (:require [reagent.session :as session]
             [reagent.core :as reagent :refer [atom]]
             [secretary.core :refer [dispatch!]]
             [ajax.core :refer [POST]]))
