@@ -36,7 +36,7 @@
   :min-lein-version "2.0.0"
 
   :jvm-opts ["-server"]
-  :source-paths ["src/clj" "src/cljc"]
+  :source-paths ["src/clj"]
   :resource-paths ["resources" "target/cljsbuild"]
 
   :main reagent-example.core
@@ -47,7 +47,7 @@
   :cljsbuild
   {:builds
    {:app
-    {:source-paths ["src/cljc" "src/cljs"]
+    {:source-paths ["src/cljs"]
      :compiler
      {:output-to "target/cljsbuild/public/js/app.js"
       :output-dir "target/cljsbuild/public/js/out"
@@ -92,7 +92,7 @@
                        :optimizations :none
                        :source-map true}}
                      :test
-                     {:source-paths ["src/cljc" "src/cljs" "test/cljs"]
+                     {:source-paths ["src/cljs" "test/cljs"]
                       :compiler
                       {:output-to "target/test.js"
                        :main "reagent-example.doo-runner"
