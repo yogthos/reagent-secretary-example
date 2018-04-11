@@ -1,21 +1,19 @@
-# reagent-example
 
-generated using Luminus version 2.9.x
+### Development mode
 
-FIXME
+To start the Figwheel compiler, navigate to the project folder and run the following command in the terminal:
 
-## Prerequisites
+```
+lein figwheel
+```
 
-You will need [Leiningen][1] 2.0 or above installed.
+Figwheel will automatically push cljs changes to the browser.
+Once Figwheel starts up, you should be able to open the `public/index.html` page in the browser.
 
-[1]: https://github.com/technomancy/leiningen
 
-## Running
+### Building for production
 
-To start a web server for the application, run:
-
-    lein run
-
-## License
-
-Copyright © 2016 FIXME
+```
+lein clean
+lein package
+```
