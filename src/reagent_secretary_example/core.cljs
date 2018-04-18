@@ -9,11 +9,10 @@
    [goog.history.EventType :as HistoryEventType])
   (:import goog.History))
 
-(def selected-page (r/atom :home))
+(def selected-page (r/atom home-page))
 
 (defn page []
   [@selected-page])
-
 ;; -------------------------
 ;; Routes
 
